@@ -15,12 +15,20 @@
             type="text" 
             id="inputNombre" 
             placeholder="Ingrese Nombre Completo" 
+            minlength="4"
+            maxlength="8"
             required
             /></td>
     </tr>
     <tr>
         <td><label for="inputEdad">Edad: </label></td>
-        <td><input type="Number" id="inputEdad" placeholder="Ingrese su Edad" /></td>
+        <td><input 
+            type="Number" 
+            id="inputEdad" 
+            placeholder="Ingrese su Edad"
+            min="0"
+            max="10"
+            /></td>
     </tr>
     <tr>
         <td><label for="inputFechadenacimiento">Fecha de Nacimiento: </label></td>
@@ -71,7 +79,13 @@
 
     <tr>
         <td><label for="inputPassword">Password</label></td>
-        <td><input type="Password" id="inputPassword"></td>
+        <td><input 
+            type="Password" 
+            id="inputPassword"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Necesitas una mayúscula, una minúscula y tu contraseña no debe ser menos a 8"
+            required>
+        </td>
     </tr>
 
     <tr>
