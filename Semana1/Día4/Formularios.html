@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios</title>
+</head>
+
+<body>
+
+<Form>
+<table>
+    <tr>
+        <td><label for="inputNombre">Nombre Completo: </label></td>
+        <td><input 
+            type="text" 
+            id="inputNombre" 
+            placeholder="Ingrese Nombre Completo" 
+            required
+            /></td>
+    </tr>
+    <tr>
+        <td><label for="inputEdad">Edad: </label></td>
+        <td><input type="Number" id="inputEdad" placeholder="Ingrese su Edad" /></td>
+    </tr>
+    <tr>
+        <td><label for="inputFechadenacimiento">Fecha de Nacimiento: </label></td>
+        <td><input type="Date" id="inputFechadenacimiento" value="2020-12-12"/></td>
+    </tr>
+
+    <tr>
+        <td><label for="inputColor">Color: </label></td>
+        <td><input type="Color" id="inputColor"></td>
+    </tr>
+
+    <tr>
+        <td>
+            <label>Género: </label>
+        </td>
+        <td>
+            <label for="inputradioM">Masculino</label>
+            <input type="radio" id="inputradioM" name="Género">
+
+            <label for="inputradioF">Femenino</label>
+            <input type="radio" id="inputradioF" name="Género">
+
+            <label for="inputradioO">Otro</label>
+            <input type="radio" id="inputradioO" name="Género">
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <label>Idiomas: </label>
+        </td>
+        <td>
+            <label for="CheckIngles">Ingles</label>
+            <input type="Checkbox" id="CheckIngles">
+
+            <label for="CheckEspañol">Español</label>
+            <input type="checkbox" id="CheckEspañol" Checked>
+
+            <label for="CheckFrances">Frances</label>
+            <input type="checkbox" id="CheckFrances">
+        </td>
+    </tr>
+
+    <tr>
+        <td><label for="">Email: </label></td>
+        <td><input type="Email" value="@gmail.com" placeholder="Ingrese su Email"></td>
+    </tr>
+
+    <tr>
+        <td><label for="inputPassword">Password</label></td>
+        <td><input type="Password" id="inputPassword"></td>
+    </tr>
+
+    <tr>
+        <td><label for="txtAreComentario">Comentarios</label></td>
+        <td><textarea id="txtAreComentario" cols="30" rows="10"></textarea></td>
+    </tr>
+
+    <tr>
+        <td><label for="">Seleccione su Departamento</label></td>
+        <td><select id="SlcDepartamentos">
+            <Option value="">Seleccione Departamento</Option>
+            <option value="">Lima</option>
+            <option value="">Lambayeque</option>
+            <option value="">Iquitos</option>
+            <option value="">Cusco</option>
+            <option value="">Arequipa</option>
+            </select></td>
+    </tr>
+
+    <tr>
+        <td><label for="inputFileSubirArchivo">Subir Archivo</label></td>
+        <td><input type="File" id="inputFileSubirArchivo"></td>
+    </tr>
+
+    <tr>
+        <td><label>Acciones</label></td>
+        <td>
+            <input type="Submit" value="Registrarme">
+            <input type="reset" value="Limpiar Formulario">
+        </td>
+    </tr>
+    
+</table>
+</Form>
+
+</body>
+</html>
