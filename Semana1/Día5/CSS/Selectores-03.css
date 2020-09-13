@@ -1,0 +1,12 @@
+header{background: gray}
+section{background: yellow}
+h1,h2,h3{color: red}
+/* Seleccionar hijos sin importar el nivel */
+.Anuncios .textoAnuncio 
+{background: chocolate;
+color: white}
+.Tarjeta{background: royalblue;}
+/* Seleccionamos hijos específicos y en orden */
+.Tarjeta > .Cuerpo-tarjeta {background: salmon}
+.tarjeta > .Cuerpo-tarjeta h4,p{color: black}
+.Tarjeta > .Pie-pagina-tarjeta {background: green}

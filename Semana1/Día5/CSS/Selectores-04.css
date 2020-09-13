@@ -1,0 +1,16 @@
+
+body {font-family: 'Montserrat', sans-serif;}
+
+/* nth-child obedece a un posición y según la posición donde esté a los atributos que tenga adentro. */
+
+li:nth-child(2){color: blue}
+/* Cambia el primer elemento */
+li:first-child{color: red}
+/* Cambia el último elemento */
+li:last-child{color: salmon}
+
+/* Odd - Even */
+tbody tr:nth-child(odd){background: purple}
+tbody tr:nth-child(even){background: red}
+
+thead{background: gray; color: yellow}
